@@ -17,7 +17,7 @@ while status == True:
             print(type(str(users_dict)))
             users_list.write(str(users_dict)),
             users_list.close
-        elif password_verify == saved_password:
+        elif password_verify != saved_password:
             print("Passwords do not match.")
     elif choose == "L":
         usernamelogin = input("Please enter your username : ")
